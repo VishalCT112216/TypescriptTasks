@@ -1,0 +1,73 @@
+<!-- <fieldset>
+    <legend>Product Details</legend>
+    Product Name : <input type="text" [(ngModel)] = "name"/>
+    <br>
+    <br>
+    Unit Price : <input type="text" [(ngModel)] = "price"/>
+    <br>
+    <br>
+    Quantity : <input type="text" [(ngModel)] = "qty"/>
+    <br>
+    <br>
+    <button value="Get Total" (click) = "GetTotal()">Get Total</button>
+    <br>
+    <br>
+    Total Amount : {{total}}
+</fieldset> -->
+<fieldset>
+    <legend>Product Details</legend>
+    Product ID : <input type="text" [(ngModel)] = "id"/>
+    <br>
+    <br>
+    Product Name : <input type="text" [(ngModel)] = "pname"/>
+    <br>
+    <br>
+    Unit Price : <input type="text" [(ngModel)] = "price"/>
+    <br>
+    <br>
+    Quantity : <input type="text" [(ngModel)] = "qty"/>
+    <br>
+    <br>
+    Category : <input type="text" [(ngModel)] = "category"/>
+    <br>
+    <br>
+    <button value="Get Total" (click) = "GetTotal()">Add Button</button>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td>
+                PId
+            </td>
+            <td>
+                Person Name
+            </td>
+            <td>
+                Category
+            </td>
+            <td>
+                Price
+            </td>
+            <td>
+                Qty
+            </td>    
+        </tr>
+        <tr  *ngFor = "let item of array">
+           <td>
+                {{item.pid}}
+            </td>
+            <td>
+                {{item.pname}}
+            </td>
+            <td>
+                {{item.category}}
+            </td>
+            <td>
+                {{item.price}}
+            </td>
+            <td>
+                {{item.qty}}
+            </td>
+        </tr> 
+    </table>
+</fieldset>
